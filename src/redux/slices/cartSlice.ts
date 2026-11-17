@@ -2,7 +2,11 @@ import { createSlice } from "@reduxjs/toolkit";
 
 type Product = {
                 id: string | number;
-                [key: string]: unknown;
+                name: string;
+                description: string;
+                category: string;
+                price: number;
+                image: string;
 };
 
 type CartItem = Product & {
